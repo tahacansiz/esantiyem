@@ -2,16 +2,20 @@ import React from 'react';
 
 const defaultListings = [
   {
-    title: 'Build a website',
-    description: 'Need a modern website for my business.'
+    title: 'Banyo Tadilatı',
+    description: 'Duşakabin, fayans ve lavabo yenilemesi yapılacak.'
   },
   {
-    title: 'Design a logo',
-    description: 'Looking for a fresh logo concept.'
+    title: 'Elektrik Arızası',
+    description: 'Evimdeki prizler çalışmıyor, kontrol edilmesi gerekiyor.'
   },
   {
-    title: 'Write blog articles',
-    description: 'Require weekly posts on technology.'
+    title: 'Parke Döşeme',
+    description: 'Salon ve koridor için parke döşenecek.'
+  },
+  {
+    title: 'Temizlik Hizmeti',
+    description: 'Haftalık detaylı ev temizliği yapılacak.'
   }
 ];
 
@@ -22,7 +26,7 @@ function ListingGrid({ listings = defaultListings }) {
         <div className="listing-card" key={idx}>
           <h3>{item.title}</h3>
           <p>{item.description}</p>
-          <button className="btn">Make Offer</button>
+          <button className="btn">Teklif Ver</button>
         </div>
       ))}
     </section>

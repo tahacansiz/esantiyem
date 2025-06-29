@@ -1,14 +1,14 @@
 import React from 'react';
 
 const defaultCategories = [
-  { icon: '🎨', label: 'Design' },
-  { icon: '💻', label: 'Development' },
-  { icon: '✍️', label: 'Writing' },
-  { icon: '📈', label: 'Marketing' },
-  { icon: '🎬', label: 'Video' },
-  { icon: '🎵', label: 'Music' },
-  { icon: '🔧', label: 'Repairs' },
-  { icon: '🧹', label: 'Cleaning' }
+  { icon: '🔧', label: 'Tesisat' },
+  { icon: '💡', label: 'Elektrik' },
+  { icon: '🧱', label: 'Tadilat' },
+  { icon: '🧹', label: 'Temizlik' },
+  { icon: '🚚', label: 'Nakliye' },
+  { icon: '🛋️', label: 'Mobilya' },
+  { icon: '🖌️', label: 'Boya' },
+  { icon: '🌳', label: 'Bahçe' }
 ];
 
 function CategoryGrid({ categories = defaultCategories }) {
