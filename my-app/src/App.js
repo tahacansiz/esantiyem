@@ -1,22 +1,17 @@
 import React from 'react';
 import './Marketplace.css';
-import Navbar from './components/Navbar';
-import SearchSection from './components/SearchSection';
-import CategoryGrid from './components/CategoryGrid';
-import ListingGrid from './components/ListingGrid';
-import AuthForms from './components/AuthForms';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   return (
-    <div className="app">
-      <Navbar />
-      <div className="container">
-        <SearchSection />
-        <CategoryGrid />
-        <ListingGrid />
-        <AuthForms />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
