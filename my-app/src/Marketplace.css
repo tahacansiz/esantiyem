@@ -26,6 +26,12 @@ body {
   line-height: 1.5;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 /* Utility classes */
 a {
   text-decoration: none;
@@ -59,11 +65,21 @@ a {
   padding: 1rem 1.5rem;
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar .menu-right {
   display: flex;
   gap: 1rem;
+}
+
+.navbar select {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--color-gray);
+  border-radius: 0.25rem;
+  background-color: #fff;
 }
 
 /* Search area */
@@ -80,6 +96,12 @@ a {
   border-radius: 0.5rem;
 }
 
+.subtitle {
+  margin-top: 0.5rem;
+  color: var(--color-dark);
+  font-size: 0.875rem;
+}
+
 /* Popular categories */
 .categories {
   display: grid;
@@ -94,6 +116,12 @@ a {
   padding: 1rem;
   text-align: center;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* Latest listings */
@@ -109,6 +137,12 @@ a {
   border-radius: 0.5rem;
   padding: 1rem;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.listing-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* 2. Login / Register Page ----------------------------------------------- */
