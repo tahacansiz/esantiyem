@@ -6,8 +6,8 @@ function Navbar() {
     <nav className="navbar">
       <div className="logo">eSantiyem</div>
       <div className="menu-right">
-        <a href="#categories">Categories</a>
-        <Link to="/login">Login / Register</Link>
+        <a href="#categories">Kategoriler</a>
+        <Link to="/login">Giriş / Kayıt</Link>
       </div>
     </nav>
   );

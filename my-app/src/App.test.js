@@ -3,6 +3,6 @@ import App from './App';
 
 test('renders search input', () => {
   render(<App />);
-  const inputElement = screen.getByPlaceholderText(/what service do you need\?/i);
+  const inputElement = screen.getByPlaceholderText(/hangi hizmete ihtiyacınız var\?/i);
   expect(inputElement).toBeInTheDocument();
 });
