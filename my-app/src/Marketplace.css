@@ -1,12 +1,12 @@
 /* Marketplace.css */
 
-/* Import Inter font for a modern look */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+/* Import Poppins font for a friendly look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /* Color variables */
 :root {
-  --color-primary: #3b82f6;
-  --color-primary-dark: #2563eb;
+  --color-primary: #f97316;
+  --color-primary-dark: #ea580c;
   --color-light: #f3f4f6;
   --color-gray: #d1d5db;
   --color-dark: #111827;
@@ -20,7 +20,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--color-light);
   color: var(--color-dark);
   line-height: 1.5;
@@ -65,10 +65,11 @@ a {
   padding: 1rem 1.5rem;
   background-color: #1f2937;
   color: #fff;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .navbar .menu-right {
@@ -78,6 +79,27 @@ a {
 
 .navbar a {
   color: #fff;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--color-primary);
+}
+
+.navbar a:hover::after {
+  width: 100%;
 }
 
 /* Hero */
