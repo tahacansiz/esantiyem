@@ -13,7 +13,7 @@ const defaultCategories = [
 
 function CategoryGrid({ categories = defaultCategories }) {
   return (
-    <section className="categories">
+    <section className="categories" id="categories">
       {categories.map((cat, idx) => (
         <div className="category-card" key={idx}>
           <div>{cat.icon}</div>

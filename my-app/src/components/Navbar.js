@@ -1,18 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">eSantiyem</div>
       <div className="menu-right">
-        <select className="categories-dropdown">
-          <option>Categories</option>
-          <option>Design</option>
-          <option>Development</option>
-          <option>Marketing</option>
-        </select>
-        <button className="btn">Login</button>
-        <button className="btn">Register</button>
+        <a href="#categories">Categories</a>
+        <Link to="/login">Login / Register</Link>
       </div>
     </nav>
   );
